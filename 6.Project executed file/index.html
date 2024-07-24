@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--flask path <link rel="stylesheet" href="{{url_for('static',filename='stylee.css')}}"> -->
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+        h3 {
+        text-align: center;
+        font-size: 40px;   
+    }
+    h1 {
+        text-align: center;
+        font-size: 40px;
+    }
+    form{
+        align-items: center;
+        
+    }
+    </style>
+     <title>Car Loan Annuity Prediction</title>
+ 
+</head>
+<body>
+
+    <h1>Car Loan Annuity Prediction</h1>
+
+ </div>
+ <!--include method="post" in flask for form
+       action ="/submit"-->
+ <form action="/predict"  method="POST">
+    <h3>Fill the details :</h3>
+    
+    <label for="Client_ID">CLIENT ID:</label>
+    <input type="text" id="Client_ID"  name="Client_ID" placeholder="ID" required><br><br>
+        
+
+    <label for="Client_Income">CLIENT INCOME:</label>
+    <input type="text" id="Client_Income"name="Client_Income" required><br><br>
+
+
+    <label for="Car_Owned">CAR OWNED:</label>
+    <input type="text" id="Car_Owned"name="Car_Owned" required><br><br>
+
+
+    <label for="Bike_Owned">BIKE OWNED:</label>
+    <input type="text" id="Bike_Owned"name="Bike_Owned" required><br><br>
+
+
+    <label for="Active_Loan">ACTIVE LOAN:</label>
+    <input type="text" id="Active_Loan" name="Active_Loan" required><br><br>
+
+
+    <label for="Credit_Amount">CREDIT AMOUNT:</label>
+    <input type="text" id="Credit_Amount" name="Credit_Amount" required><br><br>
+
+
+    <label for="Loan_Annuity">LOAN ANNUITY:</label>
+    <input type="text" id="Loan_Annuity" name="Loan_Annuity" required><br><br>
+
+    <label for="client_income_type">CLIENT INCOME TYPE:</label>
+    <input type="text" id="client_income_type" name="client_income_type" required><br><br>
+
+    <label for="client_education">CLIENT EDUCATION:</label>
+    <input type="text" id="client_education" name="client_education" required><br><br>
+
+    <label for="client_marital_status">CLIENT MARITAL STATUS:</label>
+    <input type="text" id="client_marital_status" name="client_marital_status" required><br><br>
+
+    <label for="client_gender">CLIENT GENDER:</label>
+    <input type="text" id="client_gender" name="client_gender"required><br><br>
+
+    <label for="loan_contract_type">LOAN CONTRACT TYPE:</label>
+    <input type="text" id="loan_contract_type" name="loan_contract_type"required><br><br>
+
+    <label for="client_occupation">CLIENT OCCUPATION:</label>
+    <input type="text" id="client_occupation" name="client_occupation"required><br><br>
+
+    <label for="type_organization">TYPE ORGANIZATION:</label>
+    <input type="text" id="type_organization" name="type_organization"required><br><br>
+
+    <label for="House_Own"> HOUSE OWN:</label>  
+    <input type="text" id="House_Own" name="House_Own"required><br><br>
+
+    <label for="child_count"> CHILD COUNT:</label>  
+    <input type="text" id="child_count" name="child_count"required><br><br>
+
+    <label for="Accompany_client"> ACCOMPANY_CLIENT:</label>  
+    <input type="text" id="Accompany_client" name="Accompany_client"required><br><br>
+
+    <label for="client_housing_type"> CLIENT HOUSING TYPE:</label>  
+    <input type="text" id="client_housing_type" name="client_housing_type"required><br><br>
+
+    <label for="population_region_relative"> POPULATION REGION RELATIVE:</label>  
+    <input type="text" id="population_region_relative" name="population_region_relative"required><br><br>
+
+    <label for="Age_days"> AGE DAYS:</label>  
+    <input type="text" id="Age_days" name="Age_days"required><br><br>
+
+    <label for="Employed_days"> EMPLOYED DAYS:</label>  
+    <input type="text" id="Employed_days" name="Employed_days"required><br><br>
+
+    <label for="Registration_days"> REGISTRATION DAYS:</label>  
+    <input type="text" id="Registration_days" name="Registration_days"required><br><br>
+
+    <label for="Id_days"> ID DAYS:</label>  
+    <input type="text" id="Id_days" name="Id_days"required><br><br>
+
+    <label for="Own_house_age"> OWN HOUSE AGE :</label>  
+    <input type="text" id="Own_house_age" name="Own_house_age"required><br><br>
+
+    <label for="Homephone_tag"> HOMEPHONE TAG:</label>  
+    <input type="text" id="Homephone_tag" name="Homephone_tag"required><br><br>
+
+    <label for="mobile_tag"> MOBILE TAG:</label>  
+    <input type="text" id="mobile_tag" name="mobile_tag"required><br><br>
+
+    <label for="workphone_working"> WORKPHONE WORKING:</label>  
+    <input type="text" id="workphone_working" name="workphone_working"required><br><br>
+
+    <label for="social_circle_default"> SOCIAL CIRCLE DEFAULT:</label>  
+    <input type="text" id="social_circle_default" name="social_circle_default"required><br><br>
+
+    <label for="phone_change"> PHONE CHANGE:</label>  
+    <input type="text" id="phone_change" name="phone_change"required><br><br>
+
+    <label for="Credit_bureau"> CREDIT BUREAU:</label>  
+    <input type="text" id="Credit_bureau" name="Credit_bureau"required><br><br>
+
+    <label for="client_family_members"> CLIENT FAMILY MEMBERS:</label>  
+    <input type="text" id="client_family_members" name="client_family_members"required><br><br>
+
+    <label for="client_city_rating"> CLIENT CITY RATING:</label>  
+    <input type="text" id="client_city_rating" name="client_city_rating"required><br><br>
+
+    <label for="application_process_days"> APPLICATION PROCESS DAYS:</label>  
+    <input type="text" id="application_process_days" name="application_process_days"required><br><br>
+
+    <label for="client_permant_match_tag"> CLIENT PERMANT MATCH TAG:</label>  
+    <input type="text" id="client_permant_match_tag" name="client_permant_match_tag"required><br><br>
+
+    <label for="client_contact_work_tag"> CLIENT CONTACT WORK TAG:</label>  
+    <input type="text" id="client_contact_work_tag" name="client_contact_work_tag"required><br><br>
+
+    <label for="application_process_hour"> APPLICATION PROCESS HOUR:</label>  
+    <input type="text" id="application_process_hour" name="application_process_hour"required><br><br>
+
+    <label for="score_source_1">  SCORE SOURCE 1:</label>  
+    <input type="text" id="score_source_1" name="score_source_1"required><br><br>
+
+    <label for="score_source_2">  SCORE SOURCE 2:</label>  
+    <input type="text" id="score_source_2" name="score_source_2"required><br><br>
+
+    <label for="score_source_3">  SCORE SOURCE 3:</label>  
+    <input type="text" id="score_source_3" name="score_source_3"required><br><br>
+
+    <button type="submit" class="submit-button" value="submit">Predict Default</button>
+   
+    </form>
+<!--sample input:
+    [[12138936, 20250,1,0,1,15282, 1826,5,0,1,1,0,18,11]] -false
+    [[12214557,13500,0,1,1,30234,1840,1,4,1,1,0,8,5]]  -true    -->
+    <fotter>
+       
+    <p>Details of Car Loans and Rules:</p>
+    <p>Car loans are a type of financial assistance provided for the purchase of vehicles. Here are some rules and requirements:</p>
+    <ul>
+        <li>Minimum Client Income is required for approval.</li>
+        <li>Active Loan and Credit Amount are factors that influence eligibility.</li>
+        <li>Client's education and occupation may also impact the loan approval.</li>
+    </ul>
+    </fotter>
+  
+</body>
+</html>
